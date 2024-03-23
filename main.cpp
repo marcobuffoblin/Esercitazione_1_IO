@@ -35,7 +35,7 @@ int main(){
 
             // Calcoliamo la media e la stampiamo nel file result.csv
             contatore++;
-            somma=somma+rimappatura(num);
+            somma+=rimappatura(num); // ossia somma=somma+rimappatura(num)
             media=somma/contatore;
             //cout<<contatore <<"   "<<scientific<<media<<endl;
             ofs<<contatore <<"  "<<setprecision(16)<<scientific<<media<<endl;
